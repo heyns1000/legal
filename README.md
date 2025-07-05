@@ -80,7 +80,7 @@ This repo features:
 ## 💬 Support
 
 - Open an issue in this repository for help or to report missing docs.
-- Contact the maintainer: [heyns1000](https://github.com/heyns1000)....now please dont this is after the fact i dont do helplines my brother, u have a wonderful time do not download ig u dont have the desire to battle, we are changing the world and dont have time for time wasters therefore we dont have time to pickup the imaginary phone when u call , because u to fucking lazy to read and try, so this is a very important message that u do not proceed without motive of change,
+- Contact the maintainer: [heyns1000](https://github.com/heyns1000)....now please dont this is after the fact i dont do helplines my brother, u have a wonderful time do not download i u dont have the desire to battle, we are changing the world and dont have time for time wasters therefore we dont have time to pickup the imaginary phone when u call , because u to fucking lazy to read and try, so this is a very important message that u do not proceed without motive of change,
 and a lekker Black label !
 
 ---
@@ -91,4 +91,4 @@ This repository is **public** and intended for open documentation and knowledge 
 
 ---
 
-*Last updated: July 2025* 🌻
+*Last updated: July 2025* 🌻 all rightts reserved myuniverse.ai
