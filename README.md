@@ -1,4 +1,4 @@
-# legal.faa.zone Integration Minutes, Manuals, and Troubleshooting (Vlegal) 🌐📒✨
+# Legal.faa.zone Integration Minutes, Manuals, and Troubleshooting (Vlegal) 🌐📒✨
 
 Welcome to the **heyns1000/legal** repository!  
 This is your one-stop hub for all minutes, manuals, integration notes, and troubleshooting guides for the [legal.faa.zone](https://legal.faa.zone) ecosystem, including the Vlegal platform.  
@@ -30,8 +30,8 @@ This repo features:
 | `paypal.html`, `paypal_setup.html`              | 💸 PayPal integration & setup guides                   |
 | `xero_integration_minutes.html`                 | 📊 Xero integration minutes                            |
 | `fruitful_seedwave_deployment_manual.html`      | 🌱 Seedwave deployment manual                          |
-| `manual.html`                                  | 📚 General Vlegal/how-to manual                        |
-| `index.html`                                   | 🏠 Main documentation index                            |
+| `manual.html`                                   | 📚 General Vlegal/how-to manual                        |
+| `index.html`                                    | 🏠 Main documentation index                            |
 | ...                                             | 🌍 More partner docs, NDAs, and advanced setups        |
 
 > **Pro Tip:** Open `.html` files in your browser for the best experience!
@@ -80,7 +80,8 @@ This repo features:
 ## 💬 Support
 
 - Open an issue in this repository for help or to report missing docs.
-- Contact the maintainer: [heyns1000](https://github.com/heyns1000)
+- Contact the maintainer: [heyns1000](https://github.com/heyns1000)....now please dont this is after the fact i dont do helplines my brother, u have a wonderful time do not download ig u dont have the desire to battle, we are changing the world and dont have time for time wasters therefore we dont have time to pickup the imaginary phone when u call , because u to fucking lazy to read and try, so this is a very important message that u do not proceed without motive of change,
+and a lekker Black label !
 
 ---
 
