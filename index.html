@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAA.ZONE™ Legal & Documentation Hub</title>
-    <!-- Favicon assumed to be at root /favicon.ico -->
     <link rel="icon" href="/favicon.ico">
-    <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Existing CSS from the original template */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f1f5f9; /* slate-100 */
+            background-color: #f1f5f9;
         }
         .featured-button {
             transition: all 0.3s ease;
@@ -24,15 +19,12 @@
             overflow: hidden;
             border: none;
         }
-
         .featured-button:hover {
             box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
         }
-
         .featured-button:active {
             transform: scale(0.98);
         }
-
         .featured-button::before {
             content: '';
             position: absolute;
@@ -46,12 +38,10 @@
             transform: translate(-50%, -50%) scale(0);
             opacity: 0;
         }
-
         .featured-button:hover::before {
             transform: translate(-50%, -50%) scale(1);
             opacity: 1;
         }
-
         .nav-link {
             display: flex;
             align-items: center;
@@ -59,43 +49,39 @@
             border-radius: 0.5rem;
             transition: background-color 0.2s, color 0.2s;
             font-weight: 500;
-            color: #475569; /* slate-600 */
+            color: #475569;
             text-decoration: none;
-            justify-content: flex-start; /* Align text to the left within the link block */
+            justify-content: flex-start;
         }
         .nav-link:hover {
-            background-color: #e2e8f0; /* slate-200 */
-            color: #1e293b; /* slate-900 */
+            background-color: #e2e8f0;
+            color: #1e293b;
         }
-        /* Custom styles to match the provided homepage's aesthetic */
         .main-container-style {
-            background-color: #ffffff; /* white */
-            border-top: 8px solid #4f46e5; /* indigo-600 */
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); /* shadow-2xl */
-            border-radius: 1.5rem; /* rounded-3xl */
+            background-color: #ffffff;
+            border-top: 8px solid #4f46e5;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-radius: 1.5rem;
         }
-        /* New CSS for the top Fruitful header */
         .top-fruitful-header {
-            background-color: #ffffff; /* White background for the header */
-            padding: 1rem 2rem; /* Padding top/bottom and left/right */
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Subtle shadow */
-            margin-bottom: 2rem; /* Space between header and main content */
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
             width: 100%;
-            max-width: 1024px; /* Constrain width like container */
-            border-radius: 0.75rem; /* Rounded corners */
+            max-width: 1024px;
+            border-radius: 0.75rem;
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Align Fruitful to the left */
+            justify-content: flex-start;
         }
         .fruitful-logo-text {
             font-family: 'Inter', sans-serif;
-            font-size: 2.5rem; /* Large font size for the logo */
-            font-weight: 800; /* Extra bold */
-            color: #4f46e5; /* Indigo-700 or a strong brand color */
-            margin-right: 0.5rem; /* Space between text and TM symbol */
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #4f46e5;
+            margin-right: 0.5rem;
         }
-
-        /* FAA.ZONE Logo/Header */
         .faazone-header h1 {
             font-size: 1.75rem;
         }
@@ -112,8 +98,6 @@
                 font-size: 3rem;
             }
         }
-
-        /* Document item styles */
         .document-item {
             display: flex;
             flex-direction: column;
@@ -121,11 +105,11 @@
             gap: 0.75rem;
             padding: 0.75rem;
             border-radius: 0.75rem;
-            background-color: #f8fafc; /* slate-50 */
-            border: 1px solid #e2e8f0; /* slate-200 */
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             transition: all 0.2s ease-in-out;
-            text-align: left; /* Ensure text aligns left within item */
+            text-align: left;
             width: 100%;
         }
         @media (min-width: 640px) {
@@ -139,12 +123,12 @@
         .document-item:hover {
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             transform: translateY(-2px);
-            border-color: #a78bfa; /* purple-400 */
+            border-color: #a78bfa;
         }
         .document-item .icon {
             flex-shrink: 0;
             font-size: 2.5rem;
-            color: #4f46e5; /* indigo-600 */
+            color: #4f46e5;
         }
         @media (min-width: 640px) {
             .document-item .icon {
@@ -154,7 +138,7 @@
         .document-item-content h3 {
             font-size: 1.25rem;
             font-weight: 600;
-            color: #1e293b; /* slate-900 */
+            color: #1e293b;
             margin-bottom: 0.25rem;
         }
         @media (min-width: 640px) {
@@ -164,7 +148,7 @@
         }
         .document-item-content p {
             font-size: 0.95rem;
-            color: #475569; /* slate-600 */
+            color: #475569;
             margin-bottom: 0.5rem;
         }
         @media (min-width: 640px) {
@@ -173,7 +157,7 @@
             }
         }
         .document-item-content a {
-            color: #4f46e5; /* indigo-600 */
+            color: #4f46e5;
             font-weight: 500;
             text-decoration: none;
             display: inline-flex;
@@ -185,99 +169,84 @@
         .document-item-content a svg {
             margin-left: 0.25rem;
         }
-        /* Specific styles for the footer, extracted from the original document */
-        .custom-footer { /* Renamed to avoid conflict with `footer` tag style */
-            background-color: #1a1a1a; /* bg-gray-900 from Tailwind, equivalent to this dark gray */
+        .custom-footer {
+            background-color: #1a1a1a;
             color: white;
-            padding: 2rem 1.5rem; /* py-8 px-6 */
+            padding: 2rem 1.5rem;
             text-align: center;
-            width: 100%; /* Ensure footer spans full width */
-            margin-top: auto; /* Push to the bottom */
+            width: 100%;
+            margin-top: auto;
         }
-
         @media (min-width: 768px) {
             .custom-footer {
-                padding-left: 5rem; /* md:px-20 */
-                padding-right: 5rem; /* md:px-20 */
+                padding-left: 5rem;
+                padding-right: 5rem;
             }
         }
-
         .banimal-footer-content {
-            max-width: 48rem; /* max-w-2xl */
+            max-width: 48rem;
             margin-left: auto;
             margin-right: auto;
         }
-
         .banimal-footer-content h1 {
-            font-size: 2rem; /* text-3xl */
-            line-height: 1.25; /* leading-tight */
-            font-weight: 800; /* font-extrabold */
-            color: #ffffff; /* text-white */
-            margin-bottom: 0.5rem; /* mb-2 */
+            font-size: 2rem;
+            line-height: 1.25;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
         }
-
         @media (min-width: 768px) {
             .banimal-footer-content h1 {
-                font-size: 2.25rem; /* md:text-4xl */
+                font-size: 2.25rem;
             }
         }
-
         @media (min-width: 1024px) {
             .banimal-footer-content h1 {
-                font-size: 3rem; /* lg:text-5xl */
+                font-size: 3rem;
             }
         }
-
         .banimal-footer-content .text-blue-400 {
-            color: #60a5fa; /* Tailwind's blue-400 */
+            color: #60a5fa;
         }
-
         .banimal-footer-content p {
-            font-size: 1rem; /* text-base */
-            line-height: 1.625; /* leading-relaxed */
-            color: #d1d5db; /* text-gray-300 */
-            margin-bottom: 1.5rem; /* mb-6 */
+            font-size: 1rem;
+            line-height: 1.625;
+            color: #d1d5db;
+            margin-bottom: 1.5rem;
         }
-
         @media (min-width: 768px) {
             .banimal-footer-content p {
-                font-size: 1.125rem; /* md:text-lg */
+                font-size: 1.125rem;
             }
         }
-
         .cta-button {
-            background-color: #3b82f6; /* bg-blue-600 */
-            color: #ffffff; /* text-white */
-            font-weight: 600; /* font-semibold */
-            padding: 0.75rem 1.5rem; /* py-3 px-6 */
-            border-radius: 9999px; /* rounded-full */
+            background-color: #3b82f6;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             transition-property: background-color;
-            transition-duration: 0.2s; /* duration-200 */
-            text-decoration: none; /* Ensure it looks like a button, not a plain link */
-        }
-
-        .cta-button:hover {
-            background-color: #2563eb; /* hover:bg-blue-700 */
-        }
-
-        .cta-button .ml-2 {
-            margin-left: 0.5rem; /* ml-2 */
-        }
-
-        .copyright {
-            font-size: 0.875rem; /* text-sm */
-            color: #6b7280; /* text-gray-500 */
-            margin-top: 2rem; /* mt-8 */
-        }
-
-        .copyright a {
-            color: #60a5fa; /* text-blue-400 */
+            transition-duration: 0.2s;
             text-decoration: none;
         }
-
+        .cta-button:hover {
+            background-color: #2563eb;
+        }
+        .cta-button .ml-2 {
+            margin-left: 0.5rem;
+        }
+        .copyright {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 2rem;
+        }
+        .copyright a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
         .copyright a:hover {
             text-decoration: underline;
         }
@@ -285,14 +254,12 @@
 </head>
 <body class="bg-slate-100 min-h-screen flex flex-col items-center p-4">
 
-    <!-- New Top Header for Fruitful™ Logo -->
     <header class="top-fruitful-header">
         <span class="fruitful-logo-text">Fruitful™</span>
     </header>
 
     <div class="main-container-style p-8 rounded-3xl max-w-4xl w-full flex flex-col min-h-[80vh]">
         <div class="flex-grow">
-            <!-- FAA.ZONE Logo/Header -->
             <div class="flex items-center justify-center gap-3 mb-8">
                 <span class="text-4xl">🦍</span>
                 <h1 class="font-bold text-3xl text-slate-800">FAA.ZONE&trade;</h1>
@@ -305,7 +272,6 @@
                 Access essential legal documents, setup guides, and critical information for the FAA.ZONE™ ecosystem.
             </p>
 
-            <!-- Buttons Container Added Here -->
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
                 <a href="#add-new-repo-section" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-200 text-center flex-1">
                     Add New Repository
@@ -316,9 +282,8 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-                <!-- NEW: Agriculture & Biotech PayPal -->
                 <div class="document-item">
-                    <div class="icon">🌱</div> <!-- Seedling icon for agriculture -->
+                    <div class="icon">🌱</div>
                     <div class="document-item-content">
                         <h3>Agriculture & Biotech PayPal Integration Manual</h3>
                         <p>Comprehensive guide for PayPal integration within the AgroChain™ framework, covering product offerings and payment processing.</p>
@@ -331,9 +296,8 @@
                     </div>
                 </div>
 
-                <!-- NEW: Foxed Has Mobiles™ Global Launch & Dev Manual -->
                 <div class="document-item">
-                    <div class="icon">🦊</div> <!-- Fox icon for Foxed Has Mobiles -->
+                    <div class="icon">🦊</div>
                     <div class="document-item-content">
                         <h3>Foxed Has Mobiles™ Global Launch & Dev Manual</h3>
                         <p>Minutes of meeting and development guide for the Foxed Has Mobiles™ project, including visual identities and technical specifications.</p>
@@ -346,9 +310,8 @@
                     </div>
                 </div>
 
-                <!-- NEW: Sheep Document (Placeholder) -->
                 <div class="document-item">
-                    <div class="icon">🐑</div> <!-- Sheep icon -->
+                    <div class="icon">🐑</div>
                     <div class="document-item-content">
                         <h3>Sheep Document: Concentric Borders & Noodle Mountain</h3>
                         <p>An artistic and technical exploration of concentric borders, Noodle Mountain concepts, and the integration of dynamic visual elements.</p>
@@ -361,9 +324,8 @@
                     </div>
                 </div>
 
-                <!-- NEW: Global Brands Setup -->
                 <div class="document-item">
-                    <div class="icon">🌐</div> <!-- Globe icon for global brands -->
+                    <div class="icon">🌐</div>
                     <div class="document-item-content">
                         <h3>Global Brands Setup</h3>
                         <p>Detailed instructions for setting up and configuring new global brands within the Seedwave™ framework.</p>
@@ -376,9 +338,8 @@
                     </div>
                 </div>
 
-                <!-- NEW: Spotify Integration Setup and Training Manual -->
                 <div class="document-item">
-                    <div class="icon">🎶</div> <!-- Music icon for Spotify document -->
+                    <div class="icon">🎶</div>
                     <div class="document-item-content">
                         <h3>Spotify Integration Setup and Training Manual</h3>
                         <p>Comprehensive manual for setting up and understanding the Spotify integration within Seedwave™, including OAuth 2.0 security considerations.</p>
@@ -391,9 +352,8 @@
                     </div>
                 </div>
 
-                <!-- NEW: Fruitful.Music™ Launch Concept - Integrated Manual & App -->
                 <div class="document-item">
-                    <div class="icon">🎧</div> <!-- Headphone icon for music app -->
+                    <div class="icon">🎧</div>
                     <div class="document-item-content">
                         <h3>Fruitful.Music™ Launch Concept - Integrated Manual & App</h3>
                         <p>An interactive demonstration and manual showcasing the Fruitful.Music™ platform's design, features, and integration of music with aura concepts.</p>
@@ -406,9 +366,8 @@
                     </div>
                 </div>
 
-                <!-- Fruitful™ & Seedwave™ Deployment Manual -->
                 <div class="document-item">
-                    <div class="icon">📚</div> <!-- Changed icon to a book/manual -->
+                    <div class="icon">📚</div>
                     <div class="document-item-content">
                         <h3>Fruitful™ & Seedwave™ Deployment Manual</h3>
                         <p>Comprehensive guide detailing the design philosophy, visual specifications, Git workflow, file structure, and Node packing strategies for the Fruitful™ & Seedwave™ Global Portal.</p>
@@ -421,7 +380,6 @@
                     </div>
                 </div>
 
-                <!-- Xero Integration Setup Minutes -->
                 <div class="document-item">
                     <div class="icon">📊</div>
                     <div class="document-item-content">
@@ -436,7 +394,6 @@
                     </div>
                 </div>
 
-                <!-- Firebase Core Setup Minutes -->
                 <div class="document-item">
                     <div class="icon">🔥</div>
                     <div class="document-item-content">
@@ -451,7 +408,6 @@
                     </div>
                 </div>
 
-                <!-- Firebase Scalable Admin Panel (7000 Sites) -->
                 <div class="document-item">
                     <div class="icon">🚀</div>
                     <div class="document-item-content">
@@ -466,7 +422,6 @@
                     </div>
                 </div>
 
-                <!-- Fruitful™ Holdings NDA -->
                 <div class="document-item">
                     <div class="icon">📜</div>
                     <div class="document-item-content">
@@ -481,7 +436,6 @@
                     </div>
                 </div>
 
-                <!-- Secure Sign Application -->
                 <div class="document-item">
                     <div class="icon">✍️</div>
                     <div class="document-item-content">
@@ -496,7 +450,6 @@
                     </div>
                 </div>
 
-                <!-- PayPal Subscriptions Setup Manual (using paypal_setup.html content) -->
                 <div class="document-item">
                     <div class="icon">💳</div>
                     <div class="document-item-content">
@@ -511,7 +464,6 @@
                     </div>
                 </div>
 
-                <!-- FAA™ Seedwave Admin Portal Setup Manual -->
                 <div class="document-item">
                     <div class="icon">⚙️</div>
                     <div class="document-item-content">
@@ -526,7 +478,6 @@
                     </div>
                 </div>
 
-                <!-- NDA SecureSign Portal Setup Manual (from setup.html) -->
                 <div class="document-item">
                     <div class="icon">📖</div>
                     <div class="document-item-content">
@@ -541,7 +492,6 @@
                     </div>
                 </div>
 
-                <!-- Setup Guide (Page 2) -->
                 <div class="document-item">
                     <div class="icon">📄</div>
                     <div class="document-item-content">
@@ -556,7 +506,6 @@
                     </div>
                 </div>
 
-                <!-- Setup Guide (Page 3) -->
                 <div class="document-item">
                     <div class="icon">📃</div>
                     <div class="document-item-content">
@@ -571,7 +520,6 @@
                     </div>
                 </div>
 
-                <!-- Setup Guide (Page 4) -->
                 <div class="document-item">
                     <div class="icon">📜</div>
                     <div class="document-item-content">
@@ -586,7 +534,6 @@
                     </div>
                 </div>
 
-                <!-- Setup Guide (Page 5) -->
                 <div class="document-item">
                     <div class="icon">📑</div>
                     <div class="document-item-content">
@@ -601,7 +548,6 @@
                     </div>
                 </div>
 
-                <!-- USA Information -->
                 <div class="document-item">
                     <div class="icon">🇺🇸</div>
                     <div class="document-item-content">
@@ -616,7 +562,6 @@
                     </div>
                 </div>
 
-                <!-- Setup USA Guide -->
                 <div class="document-item">
                     <div class="icon">🗺️</div>
                     <div class="document-item-content">
@@ -631,7 +576,6 @@
                     </div>
                 </div>
 
-                <!-- Baobab Security Network™ Business Package README -->
                 <div class="document-item">
                     <div class="icon">🌳</div>
                     <div class="document-item-content">
@@ -646,7 +590,6 @@
                     </div>
                 </div>
 
-                <!-- King Price™ Pricing & Plans -->
                 <div class="document-item">
                     <div class="icon">💰</div>
                     <div class="document-item-content">
@@ -661,7 +604,6 @@
                     </div>
                 </div>
 
-                <!-- Index Transdata -->
                 <div class="document-item">
                     <div class="icon">📊</div>
                     <div class="document-item-content">
@@ -676,10 +618,114 @@
                     </div>
                 </div>
 
+                <!-- NEW: FAA.ZONE™ Minutes of Meeting -->
+                <div class="document-item">
+                    <div class="icon">📝</div>
+                    <div class="document-item-content">
+                        <h3>FAA.ZONE™ Minutes of Meeting</h3>
+                        <p>Official minutes of key FAA.ZONE™ meetings, detailing discussions and decisions.</p>
+                        <a href="/legal/faa_zone_minutes_of_meeting.html" target="_blank">
+                            View Minutes
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: General Manual -->
+                <div class="document-item">
+                    <div class="icon">📘</div>
+                    <div class="document-item-content">
+                        <h3>General Operational Manual</h3>
+                        <p>General operational and technical manual for FAA.ZONE™ systems.</p>
+                        <a href="/legal/manual.html" target="_blank">
+                            View Manual
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: Omnigrid Pulsetrade Merger Meeting Minutes -->
+                <div class="document-item">
+                    <div class="icon">🤝</div>
+                    <div class="document-item-content">
+                        <h3>Omnigrid & Pulsetrade Merger Meeting Minutes</h3>
+                        <p>Minutes of the meeting regarding the Omnigrid and Pulsetrade merger discussions.</p>
+                        <a href="/legal/omnigrid_pulsetrade_merge_meeting.html" target="_blank">
+                            View Minutes
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: PayPal General Documentation (distinct from setup) -->
+                <div class="document-item">
+                    <div class="icon">💳</div>
+                    <div class="document-item-content">
+                        <h3>PayPal General Documentation</h3>
+                        <p>General documentation for PayPal integration within FAA.ZONE™ systems.</p>
+                        <a href="/legal/paypal.html" target="_blank">
+                            View Document
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: Sector Ritual AncestorTag Heritage Portal Meeting -->
+                <div class="document-item">
+                    <div class="icon">🏛️</div>
+                    <div class="document-item-content">
+                        <h3>Sector Ritual AncestorTag Heritage Portal Meeting</h3>
+                        <p>Minutes of the meeting for the Sector Ritual AncestorTag Heritage Portal project.</p>
+                        <a href="/legal/sector_ritual_ancestortag_heritage_portal_meeting.html" target="_blank">
+                            View Minutes
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: SecureSign Portal Documentation (distinct from application) -->
+                <div class="document-item">
+                    <div class="icon">🔐</div>
+                    <div class="document-item-content">
+                        <h3>SecureSign Portal Documentation</h3>
+                        <p>Comprehensive documentation for the SecureSign Portal, covering its features and usage.</p>
+                        <a href="/legal/securesign_portal.html" target="_blank">
+                            View Document
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NEW: WeThinkCode Documentation -->
+                <div class="document-item">
+                    <div class="icon">💻</div>
+                    <div class="document-item-content">
+                        <h3>WeThinkCode Documentation</h3>
+                        <p>Documentation related to the WeThinkCode partnership and initiatives within FAA.ZONE™.</p>
+                        <a href="/legal/wethinkcode.html" target="_blank">
+                            View Document
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- This is the footer you want to replace -->
         <footer class="custom-footer">
             <div class="banimal-footer-content">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white mb-2">
@@ -699,4 +745,3 @@
     </div>
 </body>
 </html>
-
